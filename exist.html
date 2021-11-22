@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<script>
+var count = 10;
+var url = 'http://monitoring.ap.ua/lib/exist.php';
+
+for (var i = 1; i <= count; i++) {
+	var queryUrl = url + '?name='+i;
+	$.ajax({
+		url: queryUrl,
+		timeout: 1000*i,
+	});
+}
+</script>
+</body>
+</html>
+
+
+
