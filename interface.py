@@ -9,6 +9,7 @@ import DOKClass
 import random
 from errors import Err
 
+
 def get_result(class_, article, agent, ip, ccc, column, window, selfip, PRICECART):
     len_article = len(article)
     ip_list = ip
@@ -45,6 +46,7 @@ def get_result(class_, article, agent, ip, ccc, column, window, selfip, PRICECAR
             window['-PROGEXIST-'].update(int(i) / int(len_article) * 100)
         t.sleep(random.randint(2, 10))
     window.write_event_value('-THREAD DONE-', column)
+
 
 def go(class_, article, agent, ip, ccc, column, window, selfip, PRICECART=False):
     thread_id = threading.Thread(
