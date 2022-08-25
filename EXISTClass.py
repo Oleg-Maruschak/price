@@ -8,7 +8,8 @@ import function as f
 from bs4 import BeautifulSoup
 from errors import Err
 
-class EXIST():
+
+class EXIST:
     def __init__(self):
         self.countListAll = 0
         self.countNow = 0
