@@ -5,7 +5,8 @@ import config as cf
 from bs4 import BeautifulSoup
 import sys
 
-class DOK():
+
+class DOK:
     def format_string(self, data):
         name = str(data).replace(' ', '').replace('-', '').replace('/', '').replace('*', '').replace('.', '').replace(',', '')
         name = name.upper()
